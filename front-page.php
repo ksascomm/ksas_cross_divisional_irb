@@ -18,7 +18,7 @@
 					</div>
 			    </section>
 
-			    <?php  //News Query		
+			    <?php $theme_option = flagship_sub_get_global_options();   //News Query		
 					$news_query_cond = $theme_option['flagship_sub_news_query_cond'];
 					$news_quantity = $theme_option['flagship_sub_news_quantity']; 
 					if ( false === ( $news_query = get_transient( 'news_mainpage_query' ) ) ) {
