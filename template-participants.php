@@ -9,7 +9,7 @@
    <main id="main" class="large-12 medium-12 columns" role="main">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <div class="row">
-         <div class="large-9 large-offset-1 columns">
+         <div class="large-9 columns">
             <?php get_template_part( 'parts/loop', 'page' ); ?>
          </div>
       </div>
